@@ -57,12 +57,12 @@ You need API credentials from WHOOP to let this sync read your data.
 1. Go to [developer.whoop.com](https://developer.whoop.com) and sign in with your WHOOP account
 2. Click **Create App**
 3. Fill in a name (e.g. **Whoop-To-Notion**) and any description
-4. For the redirect URL, enter exactly:
+4. For the redirect URL, it should look exactly like this:
    ```
    https://www.notion.so/workers/oauth/callback
    ```
 5. For the privacy policy URL, link to your own repo or a page you control (e.g. [like this one](https://github.com/imcclanan/Whoop-To-Notion/blob/main/PRIVACY.md))
-6. Webhooks are not required — you can leave that section blank
+6. For webhook URLs, this integration doesn't use webhooks — leave those fields blank
 7. Under **Scopes**, check the boxes for the data types you want to sync. For this guide, we recommend enabling all of them
 8. Save the app
 
