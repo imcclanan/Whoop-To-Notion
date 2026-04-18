@@ -6,6 +6,8 @@ Notion Workers is a new capability in Notion which allows you to sync external d
 
 Today, we'll use this to pull in health data from WHOOP. After doing this, you'll be able to ask Notion AI about your health, create customized dashboards with the metrics you care about, and ultimately take action to improve your health. For me, this is the first step in what is a larger effort to pull in all my health data into Notion including Strava, bloodwork, and more.
 
+> **Before you start:** This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them.
+
 ### The Outcome
 
 By the end of this guide, your WHOOP data will automatically sync into four Notion databases every 30 minutes:
@@ -15,11 +17,9 @@ By the end of this guide, your WHOOP data will automatically sync into four Noti
 - **Whoop Sleep** 😴 — sleep stages, performance, efficiency, respiratory rate
 - **Whoop Workouts** 🏋️ — individual workouts with sport, strain, and duration
 
+From there, you can build custom dashboards, run Notion AI agents against your data, and surface insights tailored to your health.
+
 ---
-
-### Before you start
-
-This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them.
 
 ### What you need
 
