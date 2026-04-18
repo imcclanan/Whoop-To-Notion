@@ -221,26 +221,6 @@ From here on, the sync runs automatically every 30 minutes. New workouts, sleep 
 
 ---
 
-### Rotating your WHOOP credentials
-
-If you ever regenerate your Client Secret in the WHOOP developer portal, update it here in three steps:
-
-**1. Open your `.env` file:**
-```shell
-open .env
-```
-
-**2. Replace the `WHOOP_CLIENT_SECRET` value with your new secret and save the file.**
-
-**3. Push the updated credentials to Notion:**
-```shell
-ntn workers env push
-```
-
-It will show you the variables it's about to upload and ask `Push changes? (y/n)` — type `y` and hit Enter. Your sync will use the new secret on its next run, no redeploy needed.
-
----
-
 ### Privacy policy
 
 This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration handles your WHOOP health data. If you fork this repo and share it publicly, you should update the policy for your own version.
