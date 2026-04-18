@@ -26,7 +26,6 @@ From there, you can build custom dashboards, run Notion AI agents against your d
 - A [WHOOP](https://www.whoop.com) account with data
 - A [Notion](https://notion.so) account (free tier works)
 - [Node.js](https://nodejs.org) version 22 or later — download the LTS version if you're not sure
-- Access to [Notion Custom Agents](https://www.notion.so/?target=ai) (currently in early access — you may need to request it from your workspace admin)
 - An AI coding agent (Claude Code, Cursor, Copilot, etc.) — assumed to already be installed
 
 ---
