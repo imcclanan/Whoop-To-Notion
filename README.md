@@ -70,7 +70,7 @@ You need API credentials from WHOOP to let this sync read your data.
 
 ### Step 2 — Set up the project with your AI coding agent
 
-Download [RECIPE.md](RECIPE.md) from this repo and drop it into your AI coding agent session. Tell it:
+Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste it into your AI coding agent session. Tell it:
 
 > "Set this up for me"
 
