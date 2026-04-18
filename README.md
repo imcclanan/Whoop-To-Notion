@@ -170,26 +170,6 @@ After the backfill finishes, your databases will appear in the **Private** secti
 
 From here on, the sync runs automatically every 30 minutes. New workouts, sleep sessions, and recovery scores will appear in Notion within about 30 minutes of WHOOP scoring them (sleep scores typically show up within 30 minutes of waking up).
 
----
-
-## Useful commands
-
-```shell
-# Check sync health
-ntn workers sync status
-
-# Force a sync right now (don't wait for the 30-minute schedule)
-ntn workers sync trigger cycleDelta
-ntn workers sync trigger sleepDelta
-ntn workers sync trigger recoveryDelta
-ntn workers sync trigger workoutDelta
-
-# View recent run logs
-ntn workers runs list
-
-# Get logs for a specific run
-ntn workers runs logs <run-id>
-```
 
 ---
 
