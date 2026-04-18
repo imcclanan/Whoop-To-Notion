@@ -56,9 +56,9 @@ Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste 
 
 > "Set this up for me"
 
-Your agent will work through the setup automatically. Here's what it should do and how to verify each milestone:
+Your agent will work through the following steps automatically. Use these as checkpoints to verify things are on track:
 
-**Milestone 1 — Project folder and files created**
+**1a — Create the project folder and files**
 
 The agent should create a folder called `whoop-to-notion` containing:
 - `src/index.ts` — the sync logic
@@ -66,19 +66,19 @@ The agent should create a folder called `whoop-to-notion` containing:
 - `.env.example` — credential template
 - `.gitignore` — keeps your credentials out of git
 
-**Milestone 2 — Notion Workers SDK and TypeScript tooling installed**
+**1b — Install the Notion Workers SDK**
 
 The agent should run:
 ```shell
 npm install
 ```
-This installs two things:
+This installs:
 - **`@notionhq/workers`** — the Notion Workers SDK, which is the package that lets your sync code talk to Notion
 - **`typescript`, `tsx`, `@types/node`** — TypeScript tooling used to type-check and compile the code before deploying
 
 You'll see a `node_modules/` folder appear in the project directory when this completes.
 
-**Milestone 3 — Notion Workers CLI installed**
+**1c — Install the Notion Workers CLI**
 
 The agent should run:
 ```shell
@@ -90,7 +90,7 @@ ntn --version
 ```
 You should see a version number printed.
 
-**Milestone 4 — TypeScript check passes**
+**1d — Confirm the TypeScript check passes**
 
 The agent should run:
 ```shell
