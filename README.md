@@ -1,4 +1,4 @@
-# WHOOP to Notion Sync
+# Whoop to Notion
 
 Notion Workers is a new capability in Notion which allows you to sync external data sources into your Notion workspace. (See the project on GitHub [here](https://github.com/makenotion/workers-template).) This matters because once your data flows into Notion, you can run customizations on top with Custom Agents to display and analyze your data with great flexibility.
 
