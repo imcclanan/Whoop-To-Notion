@@ -32,6 +32,8 @@ From there, you can build custom dashboards, run Notion AI agents against your d
 
 ### Step 0 — Install Node.js (skip if you already have it)
 
+Node.js is one of the most widely used programming runtimes in the world — it's safe, open source, and installed on hundreds of millions of machines. You're not installing anything obscure here.
+
 Check if Node.js is already installed by opening your terminal and running:
 
 ```shell
