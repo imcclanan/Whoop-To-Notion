@@ -218,6 +218,11 @@ After the backfill finishes, your databases will appear in the **Private** secti
 
 From here on, the sync runs automatically every 30 minutes. New workouts, sleep sessions, and recovery scores will appear in Notion within about 30 minutes of WHOOP scoring them (sleep scores typically show up within 30 minutes of waking up).
 
+---
+
+### You're done
+
+Your WHOOP data is now flowing into Notion automatically. From here, you can build custom dashboards, ask Notion AI questions about your health trends, or connect this data to other tools in your workspace. The hard part is behind you — everything from here is just building on top of what you set up.
 
 ---
 
