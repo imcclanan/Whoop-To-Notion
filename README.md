@@ -62,7 +62,7 @@ You need API credentials from WHOOP to let this sync read your data.
    https://www.notion.so/workers/oauth/callback
    ```
 5. Under **Scopes**, check the boxes for the data types you want to sync. For this guide, we recommend enabling all of them
-6. Save the app and copy your **Client ID** and **Client Secret** — you'll need these shortly
+6. Save the app
 
 ---
 
