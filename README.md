@@ -50,7 +50,7 @@ If you get an error or a version below 22, install it:
 
 ---
 
-### Step 1 — Set up the project with your AI coding agent
+### Step 1 — Scaffold the project and install the Notion Workers SDK
 
 Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste it into your AI coding agent session. Tell it:
 
@@ -66,13 +66,13 @@ The agent should create a folder called `whoop-to-notion` containing:
 - `.env.example` — credential template
 - `.gitignore` — keeps your credentials out of git
 
-**Milestone 2 — Dependencies installed**
+**Milestone 2 — Notion Workers SDK installed**
 
 The agent should run:
 ```shell
 npm install
 ```
-You'll see a `node_modules/` folder appear in the project directory when this completes.
+This installs the Notion Workers SDK (`@notionhq/workers`) — the package that lets your code talk to Notion — along with TypeScript tooling. You'll see a `node_modules/` folder appear in the project directory when this completes.
 
 **Milestone 3 — Notion Workers CLI installed**
 
