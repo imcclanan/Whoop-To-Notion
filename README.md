@@ -42,8 +42,11 @@ You need API credentials from WHOOP to let this sync read your data.
 
 1. Go to [developer.whoop.com](https://developer.whoop.com) and sign in with your WHOOP account
 2. Click **Create App**
-3. Fill in a name (e.g. "My Notion Sync") and any description
-4. For the redirect URL, put `https://example.com` for now — you'll update it in Step 5
+3. Fill in a name (e.g. "Whoop-To-Notion") and any description
+4. For the redirect URL, enter exactly:
+   ```
+   https://www.notion.so/workers/oauth/callback
+   ```
 5. Under **Scopes**, enable: `offline`, `read:recovery`, `read:cycles`, `read:sleep`, `read:workout`, `read:body_measurement`
 6. Save the app and copy your **Client ID** and **Client Secret** — you'll need these shortly
 
@@ -119,17 +122,9 @@ You should see a success message listing the capabilities that were deployed.
 
 This is the OAuth step — it links your WHOOP account to the sync.
 
-First, get the redirect URL that Notion assigned to your worker:
-
-```shell
-ntn workers oauth show-redirect-url
-```
-
-Copy that URL. Then:
-
 1. Go back to [developer.whoop.com](https://developer.whoop.com) and open your app
-2. Update the **Redirect URL** to the URL you just copied
-3. Save the app
+2. Confirm the **Redirect URL** is set to `https://www.notion.so/workers/oauth/callback` (you set this in Step 1)
+3. Save the app if you made any changes
 
 Now start the OAuth flow:
 
