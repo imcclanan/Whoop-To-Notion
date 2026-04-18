@@ -1,6 +1,6 @@
-# WHOOP to Notion — Claude Code Recipe
+# WHOOP to Notion — Setup Recipe
 
-You are helping the user set up the WHOOP to Notion sync project. This file contains everything you need to scaffold the project from scratch. Follow the steps below in order.
+You are helping the user set up the WHOOP to Notion sync project. This project uses Notion Workers to create an automated data sync — not a tool or automation — that pulls health data from the WHOOP API and writes it into Notion databases on a 30-minute schedule. This file contains everything you need to scaffold the project from scratch. Follow the steps below in order.
 
 ---
 
