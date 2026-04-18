@@ -1,16 +1,14 @@
 # Whoop to Notion
 
-## Start here
+### Start here
 
 Notion Workers is a new capability in Notion which allows you to sync external data sources into your Notion workspace. (See the project on GitHub [here](https://github.com/makenotion/workers-template).) This matters because once your data flows into Notion, you can run customizations on top with Custom Agents to display and analyze your data with great flexibility.
 
-Today, we'll use this to pull in health data from WHOOP. After doing this, you'll be able to ask Notion AI about your health, create customized dashboards with the metrics you care about most, and ultimately take action to improve your health. For me, this is the first step in what is a larger effort to pull in all my health data into Notion including Strava, bloodwork, and more.
+Today, we'll use this to pull in health data from WHOOP. After doing this, you'll be able to ask Notion AI about your health, create customized dashboards with the metrics you care about, and ultimately take action to improve your health. For me, this is the first step in what is a larger effort to pull in all my health data into Notion including Strava, bloodwork, and more.
 
-## The Outcome
+### The Outcome
 
-Your WHOOP data stays locked inside the WHOOP app — this project breaks it out into Notion, where you can build custom dashboards, run AI agents against it, and surface insights tailored to your life. Think of it as the infrastructure layer: get the data into Notion once, and everything else becomes possible.
-
-Automatically syncs every 30 minutes. You'll get four databases in your Notion workspace:
+By the end of this guide, your WHOOP data will automatically sync into four Notion databases every 30 minutes:
 
 - **Whoop Daily Strain** 🔥 — daily cycle data (strain, heart rate, calories)
 - **Whoop Recovery** 💚 — recovery scores, HRV, resting HR, SpO2
@@ -19,21 +17,21 @@ Automatically syncs every 30 minutes. You'll get four databases in your Notion w
 
 ---
 
-## Before you start
+### Before you start
 
 This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them.
 
-## What you need
+### What you need
 
 - A [WHOOP](https://www.whoop.com) account with data
 - A [Notion](https://notion.so) account (free tier works)
 - [Node.js](https://nodejs.org) version 22 or later — download the LTS version if you're not sure
 - Access to [Notion Custom Agents](https://www.notion.so/?target=ai) (currently in early access — you may need to request it from your workspace admin)
-- [Claude Code](https://claude.ai/code) or your AI coding agent of choice — assumed to already be installed
+- An AI coding agent (Claude Code, Cursor, Copilot, etc.) — assumed to already be installed
 
 ---
 
-## Step 0 — Install Node.js (skip if you already have it)
+### Step 0 — Install Node.js (skip if you already have it)
 
 Check if Node.js is already installed by opening your terminal and running:
 
@@ -51,7 +49,7 @@ If you get an error or a version below 22, install it:
 
 ---
 
-## Step 1 — Create a WHOOP developer app
+### Step 1 — Create a WHOOP developer app
 
 You need API credentials from WHOOP to let this sync read your data.
 
@@ -67,17 +65,17 @@ You need API credentials from WHOOP to let this sync read your data.
 
 ---
 
-## Step 2 — Set up the project with Claude Code
+### Step 2 — Set up the project with your AI coding agent
 
-Download [RECIPE.md](RECIPE.md) from this repo and drop it into your Claude Code session. Tell Claude Code:
+Download [RECIPE.md](RECIPE.md) from this repo and drop it into your AI coding agent session. Tell it:
 
 > "Set this up for me"
 
-Claude Code will create the project folder, write all the files, and install dependencies automatically. Once it's done, it will tell you exactly what to do next.
+Your agent will create the project folder, write all the files, and install dependencies automatically. Once it's done, it will tell you exactly what to do next.
 
 ---
 
-## Step 3 — Log into Notion
+### Step 3 — Log into Notion
 
 ```shell
 ntn login
@@ -87,7 +85,7 @@ This will open a browser window asking you to authorize the CLI. Click **Allow**
 
 ---
 
-## Step 4 — Add your WHOOP credentials
+### Step 4 — Add your WHOOP credentials
 
 Unlike the rest of this setup, this step involves real credentials that must stay private — treat them like a password. Don't share your screen, record your terminal, or paste these values anywhere while completing this step.
 
@@ -122,7 +120,7 @@ Once you've run `ntn workers env push`, the credentials are stored securely in N
 
 ---
 
-## Step 5 — Deploy the worker
+### Step 5 — Deploy the worker
 
 This uploads your sync to Notion's servers so it can run automatically:
 
@@ -134,7 +132,7 @@ You should see a success message listing the capabilities that were deployed.
 
 ---
 
-## Step 6 — Connect your WHOOP account
+### Step 6 — Connect your WHOOP account
 
 This is the OAuth step — it links your WHOOP account to the sync.
 
@@ -152,7 +150,7 @@ This will open a browser window asking you to authorize the sync to access your 
 
 ---
 
-## Step 7 — Load your full history (one-time backfill)
+### Step 7 — Load your full history (one-time backfill)
 
 The first time you run this, pull in all your historical data:
 
@@ -171,7 +169,7 @@ ntn workers sync status
 
 ---
 
-## Step 8 — Find your databases in Notion
+### Step 8 — Find your databases in Notion
 
 After the backfill finishes, your databases will appear in the **Private** section of your Notion sidebar — this is where Notion places newly created databases by default. Search for "Whoop" in Notion if you can't find them right away. From there you can move them anywhere in your workspace.
 
@@ -180,7 +178,7 @@ From here on, the sync runs automatically every 30 minutes. New workouts, sleep 
 
 ---
 
-## Rotating your WHOOP credentials
+### Rotating your WHOOP credentials
 
 If you ever regenerate your Client Secret in the WHOOP developer portal, update it here in three steps:
 
@@ -200,7 +198,7 @@ It will show you the variables it's about to upload and ask `Push changes? (y/n)
 
 ---
 
-## Privacy policy
+### Privacy policy
 
 This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration handles your WHOOP health data. If you fork this repo and share it publicly, you should update the policy for your own version.
 
@@ -213,7 +211,7 @@ Everything else can stay as-is — the policy is written to describe the tool ge
 
 ---
 
-## Troubleshooting
+### Troubleshooting
 
 **Data not showing up after setup?**
 Run `ntn workers sync status` and check that all syncs show `HEALTHY`. If any show `ERROR`, run `ntn workers runs list` and check the logs for that sync.
