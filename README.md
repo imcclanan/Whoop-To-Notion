@@ -74,7 +74,7 @@ Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste 
 
 > "Set this up for me"
 
-Your agent will create the project folder, write all the files, and install dependencies automatically. Once it's done, it will tell you exactly what to do next.
+Your agent will create the project folder, write all the files, install dependencies, and install the Notion Workers CLI (`ntn`) automatically. Once it's done, it will tell you exactly what to do next.
 
 ---
 
