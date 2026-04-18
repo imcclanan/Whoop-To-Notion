@@ -204,6 +204,19 @@ It will show you the variables it's about to upload and ask `Push changes? (y/n)
 
 ---
 
+## Privacy policy
+
+This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration handles your WHOOP health data. If you fork this repo and share it publicly, you should update the policy for your own version.
+
+**What to change in `PRIVACY.md`:**
+
+1. **Contact email** — replace `imcclanan@gmail.com` with your own
+2. **Effective date** — update to today's date
+
+Everything else can stay as-is — the policy is written to describe the tool generically, not any specific person's deployment.
+
+---
+
 ## Troubleshooting
 
 **Data not showing up after setup?**
