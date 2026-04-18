@@ -1,7 +1,6 @@
 # Privacy Policy
 
 **Effective date:** April 18, 2026
-**Contact:** imcclanan@gmail.com
 
 ---
 
@@ -76,4 +75,4 @@ If this policy changes materially, the effective date above will be updated and 
 
 ## Contact
 
-For questions about this privacy policy or data handling, contact: **imcclanan@gmail.com**
+For questions about this privacy policy or data handling, open an issue on the [GitHub repository](https://github.com/imcclanan/Whoop-To-Notion/issues).

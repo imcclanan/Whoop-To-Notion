@@ -61,31 +61,23 @@ You need API credentials from WHOOP to let this sync read your data.
 
 ---
 
-## Step 2 — Install the Notion Workers CLI
+## Step 2 — Set up the project with Claude Code
 
-Open your terminal and run:
+Download [RECIPE.md](RECIPE.md) from this repo and drop it into your Claude Code session. Tell Claude Code:
 
-```shell
-npm install -g ntn
-```
+> "Set this up for me"
 
-Then log into your Notion workspace:
+Claude Code will create the project folder, write all the files, and install dependencies automatically. Once it's done, it will tell you exactly what to do next.
+
+---
+
+## Step 3 — Log into Notion
 
 ```shell
 ntn login
 ```
 
 This will open a browser window asking you to authorize the CLI. Click **Allow**.
-
----
-
-## Step 3 — Clone this repo and install dependencies
-
-```shell
-git clone https://github.com/imcclanan/Whoop-To-Notion.git
-cd Whoop-To-Notion
-npm install
-```
 
 ---
 
@@ -208,7 +200,7 @@ This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration h
 
 **What to change in `PRIVACY.md`:**
 
-1. **Contact email** — replace `imcclanan@gmail.com` with your own
+1. **Contact** — update the contact section to point to your own GitHub repo or preferred contact method
 2. **Effective date** — update to today's date
 
 Everything else can stay as-is — the policy is written to describe the tool generically, not any specific person's deployment.
