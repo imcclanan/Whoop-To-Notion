@@ -18,6 +18,24 @@ Automatically syncs your WHOOP health data into Notion databases every 30 minute
 
 ---
 
+## Step 0 — Install Node.js (skip if you already have it)
+
+Check if Node.js is already installed by opening your terminal and running:
+
+```shell
+node --version
+```
+
+If you see a version number like `v22.x.x` or higher, you're good — skip to Step 1.
+
+If you get an error or a version below 22, install it:
+
+1. Go to [nodejs.org](https://nodejs.org) and download the **LTS** version
+2. Open the downloaded installer and follow the prompts
+3. Once installed, close and reopen your terminal, then run `node --version` again to confirm it worked
+
+---
+
 ## Step 1 — Create a WHOOP developer app
 
 You need API credentials from WHOOP to let this sync read your data.
