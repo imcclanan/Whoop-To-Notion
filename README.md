@@ -13,9 +13,11 @@ Automatically syncs every 30 minutes. You'll get four databases in your Notion w
 
 ---
 
-> **Prerequisites:** This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them. If you've never used a terminal before, spend 10 minutes with a beginner's guide first ([Mac](https://support.apple.com/guide/terminal/welcome/mac) / [Windows](https://learn.microsoft.com/en-us/windows/terminal/)).
+## Before you start
 
-## What you need before starting
+This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them. If you've never used a terminal before, spend 10 minutes with a beginner's guide first ([Mac](https://support.apple.com/guide/terminal/welcome/mac) / [Windows](https://learn.microsoft.com/en-us/windows/terminal/)).
+
+## What you need
 
 - A [WHOOP](https://www.whoop.com) account with data
 - A [Notion](https://notion.so) account (free tier works)
