@@ -17,6 +17,7 @@ Automatically syncs your WHOOP health data into Notion databases every 30 minute
 - A [Notion](https://notion.so) account (free tier works)
 - [Node.js](https://nodejs.org) version 22 or later — download the LTS version if you're not sure
 - Access to [Notion Custom Agents](https://www.notion.so/?target=ai) (currently in early access — you may need to request it from your workspace admin)
+- [Claude Code](https://claude.ai/code) or your AI coding agent of choice — assumed to already be installed
 
 ---
 
