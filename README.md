@@ -157,7 +157,7 @@ ntn workers sync status
 
 ## Step 8 — Find your databases in Notion
 
-After the backfill finishes, your databases will appear in your Notion workspace. Search for "Whoop" in Notion and you'll find all four.
+After the backfill finishes, your databases will appear in the **Private** section of your Notion sidebar — this is where Notion places newly created databases by default. Search for "Whoop" in Notion if you can't find them right away. From there you can move them anywhere in your workspace.
 
 From here on, the sync runs automatically every 30 minutes. New workouts, sleep sessions, and recovery scores will appear in Notion within about 30 minutes of WHOOP scoring them (sleep scores typically show up within 30 minutes of waking up).
 
