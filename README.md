@@ -1,6 +1,10 @@
 # WHOOP to Notion Sync
 
-Automatically syncs your WHOOP health data into Notion databases every 30 minutes. You'll get four databases in your Notion workspace:
+Your WHOOP tracks everything — sleep, recovery, strain, workouts — but the insights stay locked inside the WHOOP app. This project pulls all of that data into your Notion workspace, where you can actually do something with it.
+
+Once your health data lives in Notion, you can build on top of it in ways WHOOP alone doesn't support: custom dashboards that surface the metrics that matter to you, Notion AI agents that run a weekly review of your sleep trends, automations that flag when your recovery has been low for several days in a row, or whatever else fits your life. This is the infrastructure layer — get the data into Notion once, and everything else becomes possible.
+
+Automatically syncs every 30 minutes. You'll get four databases in your Notion workspace:
 
 - **Whoop Daily Strain** 🔥 — daily cycle data (strain, heart rate, calories)
 - **Whoop Recovery** 💚 — recovery scores, HRV, resting HR, SpO2
