@@ -61,7 +61,7 @@ You need API credentials from WHOOP to let this sync read your data.
    ```
    https://www.notion.so/workers/oauth/callback
    ```
-5. For the privacy policy URL, link to your own repo or a page you control (e.g. `https://github.com/your-username/your-repo`)
+5. For the privacy policy URL, link to your own repo or a page you control (e.g. [like this one](https://github.com/imcclanan/Whoop-To-Notion/blob/main/PRIVACY.md))
 6. Webhooks are not required — you can leave that section blank
 7. Under **Scopes**, check the boxes for the data types you want to sync. For this guide, we recommend enabling all of them
 8. Save the app
