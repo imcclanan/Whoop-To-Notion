@@ -9,6 +9,8 @@ Automatically syncs your WHOOP health data into Notion databases every 30 minute
 
 ---
 
+> **Prerequisites:** This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them. If you've never used a terminal before, spend 10 minutes with a beginner's guide first ([Mac](https://support.apple.com/guide/terminal/welcome/mac) / [Windows](https://learn.microsoft.com/en-us/windows/terminal/)).
+
 ## What you need before starting
 
 - A [WHOOP](https://www.whoop.com) account with data
