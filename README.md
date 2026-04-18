@@ -8,6 +8,8 @@ Today, we'll use this to pull in health data from WHOOP. After doing this, you'l
 
 **Note:** This guide requires basic terminal usage — you should be comfortable opening a terminal, navigating to a folder, and running commands by copying and pasting them.
 
+**Early access:** Notion Workers is in extreme pre-release alpha. Breaking changes to the CLI and SDK are expected, and things may go wrong. Keep this in mind when building.
+
 ### The Outcome
 
 By the end of this guide, your WHOOP data will automatically sync into four Notion databases every 30 minutes:
