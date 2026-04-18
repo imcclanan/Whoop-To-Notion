@@ -50,7 +50,27 @@ If you get an error or a version below 22, install it:
 
 ---
 
-### Step 1 — Create a WHOOP developer app
+### Step 1 — Set up the project with your AI coding agent
+
+Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste it into your AI coding agent session. Tell it:
+
+> "Set this up for me"
+
+Your agent will create the project folder, write all the files, install dependencies, and install the Notion Workers CLI (`ntn`) automatically. Once it's done, it will tell you exactly what to do next.
+
+---
+
+### Step 2 — Log into Notion
+
+```shell
+ntn login
+```
+
+This will open a browser window asking you to authorize the CLI. Click **Allow**.
+
+---
+
+### Step 3 — Create a WHOOP developer app
 
 You need API credentials from WHOOP to let this sync read your data.
 
@@ -65,26 +85,6 @@ You need API credentials from WHOOP to let this sync read your data.
 6. For webhook URLs, this integration doesn't use webhooks — leave those fields blank
 7. Under **Scopes**, check the boxes for the data types you want to sync. For this guide, we recommend enabling all of them
 8. Save the app — you do not need to request approval. That is only required for apps being distributed to other users
-
----
-
-### Step 2 — Set up the project with your AI coding agent
-
-Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste it into your AI coding agent session. Tell it:
-
-> "Set this up for me"
-
-Your agent will create the project folder, write all the files, install dependencies, and install the Notion Workers CLI (`ntn`) automatically. Once it's done, it will tell you exactly what to do next.
-
----
-
-### Step 3 — Log into Notion
-
-```shell
-ntn login
-```
-
-This will open a browser window asking you to authorize the CLI. Click **Allow**.
 
 ---
 
@@ -104,7 +104,7 @@ Then open it:
 open .env
 ```
 
-Replace `your_client_id_here` and `your_client_secret_here` with the credentials you copied in Step 1, then save the file.
+Replace `your_client_id_here` and `your_client_secret_here` with the credentials you copied in Step 3, then save the file.
 
 > **Keep this file private.** Your `.env` file contains real API credentials — treat it like a password. A few rules to follow:
 >
@@ -140,7 +140,7 @@ You should see a success message listing the capabilities that were deployed.
 This is the OAuth step — it links your WHOOP account to the sync.
 
 1. Go back to [developer.whoop.com](https://developer.whoop.com) and open your app
-2. Confirm the **Redirect URL** is set to `https://www.notion.so/workers/oauth/callback` (you set this in Step 1)
+2. Confirm the **Redirect URL** is set to `https://www.notion.so/workers/oauth/callback` (you set this in Step 3)
 3. Save the app if you made any changes
 
 Now start the OAuth flow:
