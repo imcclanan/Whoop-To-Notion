@@ -54,7 +54,7 @@ If you get an error or a version below 22, install it:
 
 Open [RECIPE.md](RECIPE.md) from this repo, copy the entire contents, and paste it into your AI coding agent session. Tell it:
 
-> "Set this up for me"
+> "Follow the instructions in this file exactly. Create the project folder, write all the files as specified, run npm install, install the ntn CLI, and confirm the TypeScript check passes. Tell me when each step is complete."
 
 Your agent will work through the following steps automatically. Use these as checkpoints to verify things are on track:
 
