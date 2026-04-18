@@ -232,18 +232,3 @@ This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration h
 
 Everything else can stay as-is — the policy is written to describe the tool generically, not any specific person's deployment.
 
----
-
-### Troubleshooting
-
-**Data not showing up after setup?**
-Run `ntn workers sync status` and check that all syncs show `HEALTHY`. If any show `ERROR`, run `ntn workers runs list` and check the logs for that sync.
-
-**OAuth error when connecting WHOOP?**
-Double-check that the redirect URL in your WHOOP app settings exactly matches the one from `ntn workers oauth show-redirect-url`.
-
-**Missing old data?**
-Re-run the backfill commands from Step 7 for the data type you're missing.
-
-**Credentials not working?**
-Make sure your `.env` file has the correct Client ID and Secret from your WHOOP app, and that you ran `ntn workers env push` after creating it.
