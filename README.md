@@ -47,7 +47,7 @@ You need API credentials from WHOOP to let this sync read your data.
    ```
    https://www.notion.so/workers/oauth/callback
    ```
-5. Under **Scopes**, enable: `offline`, `read:recovery`, `read:cycles`, `read:sleep`, `read:workout`, `read:body_measurement`
+5. Under **Scopes**, check every box — enable all of them
 6. Save the app and copy your **Client ID** and **Client Secret** — you'll need these shortly
 
 ---
