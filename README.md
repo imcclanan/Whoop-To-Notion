@@ -66,13 +66,17 @@ The agent should create a folder called `whoop-to-notion` containing:
 - `.env.example` — credential template
 - `.gitignore` — keeps your credentials out of git
 
-**Milestone 2 — Notion Workers SDK installed**
+**Milestone 2 — Notion Workers SDK and TypeScript tooling installed**
 
 The agent should run:
 ```shell
 npm install
 ```
-This installs the Notion Workers SDK (`@notionhq/workers`) — the package that lets your code talk to Notion — along with TypeScript tooling. You'll see a `node_modules/` folder appear in the project directory when this completes.
+This installs two things:
+- **`@notionhq/workers`** — the Notion Workers SDK, which is the package that lets your sync code talk to Notion
+- **`typescript`, `tsx`, `@types/node`** — TypeScript tooling used to type-check and compile the code before deploying
+
+You'll see a `node_modules/` folder appear in the project directory when this completes.
 
 **Milestone 3 — Notion Workers CLI installed**
 
