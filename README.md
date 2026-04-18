@@ -42,7 +42,7 @@ You need API credentials from WHOOP to let this sync read your data.
 
 1. Go to [developer.whoop.com](https://developer.whoop.com) and sign in with your WHOOP account
 2. Click **Create App**
-3. Fill in a name (e.g. "Whoop-To-Notion") and any description
+3. Fill in a name — we recommend **Whoop-To-Notion** — and any description
 4. For the redirect URL, enter exactly:
    ```
    https://www.notion.so/workers/oauth/callback
