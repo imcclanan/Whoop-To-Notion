@@ -64,7 +64,7 @@ You need API credentials from WHOOP to let this sync read your data.
 5. For the privacy policy URL, link to your own repo or a page you control (e.g. [like this one](https://github.com/imcclanan/Whoop-To-Notion/blob/main/PRIVACY.md))
 6. For webhook URLs, this integration doesn't use webhooks — leave those fields blank
 7. Under **Scopes**, check the boxes for the data types you want to sync. For this guide, we recommend enabling all of them
-8. Save the app
+8. Save the app — you do not need to request approval. That is only required for apps being distributed to other users
 
 ---
 
