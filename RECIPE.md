@@ -446,16 +446,27 @@ npm install -g ntn
 
 ---
 
-## Step 5 — Tell the user what to do next
+## Step 5 — Confirm TypeScript check passes
 
-Once the files are written and dependencies are installed, tell the user:
+```shell
+npm run check
+```
 
-> The project is set up. Here's what you need to do next — these steps require your personal accounts and can't be automated:
+No errors means the code is valid and ready to deploy.
+
+---
+
+## Step 6 — Tell the user what to do next
+
+Once all steps above are complete, tell the user:
+
+> The project is set up. Here's what to do next — these steps require your personal accounts and can't be automated:
 >
-> 1. **Log into Notion:** Run `ntn login` in your terminal
-> 2. **Add your WHOOP credentials:** Follow Step 4 in the README
-> 3. **Deploy:** Run `ntn workers deploy`
-> 4. **Connect your WHOOP account:** Run `ntn workers oauth start whoopAuth`
-> 5. **Load your history:** Run the backfill commands from Step 7 in the README
+> 1. **Log into Notion** (Step 2 in the README): Run `ntn login` in your terminal
+> 2. **Create your WHOOP developer app** (Step 3 in the README): Go to developer.whoop.com and create an app
+> 3. **Add your WHOOP credentials** (Step 4 in the README): Copy your Client ID and Secret into the `.env` file, then run `ntn workers env push`
+> 4. **Deploy the worker** (Step 5 in the README): Run `ntn workers deploy`
+> 5. **Connect your WHOOP account** (Step 6 in the README): Run `ntn workers oauth start whoopAuth`
+> 6. **Load your history** (Step 7 in the README): Run the backfill commands
 >
 > Refer to the full README at https://github.com/imcclanan/Whoop-To-Notion for details on each step.
