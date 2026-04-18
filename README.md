@@ -130,7 +130,7 @@ You need API credentials from WHOOP to let this sync read your data.
 
 ---
 
-### Step 4 — Add your WHOOP credentials
+### Step 4 — Add your WHOOP credentials (securely)
 
 Unlike the rest of this setup, this step involves real credentials that must stay private — treat them like a password. Don't share your screen or paste these values anywhere while completing this step.
 
