@@ -68,11 +68,20 @@ WHOOP_CLIENT_ID=your_client_id_here
 WHOOP_CLIENT_SECRET=your_client_secret_here
 ```
 
+> **Keep this file private.** Your `.env` file contains real API credentials — treat it like a password. A few rules to follow:
+>
+> - **Never commit it to git.** This repo's `.gitignore` already blocks it, so as long as you don't force-add it, you're protected. If you're using an AI coding tool (Cursor, Copilot, etc.), double-check it didn't stage the file.
+> - **Never share it or paste it publicly** — not in a GitHub issue, Discord, screenshot, or anywhere else.
+> - **Never push this repo to GitHub with `.env` inside it.** Run `git status` before pushing and make sure `.env` doesn't appear in the list of files to be committed. If it does, remove it with `git rm --cached .env` before proceeding.
+> - If you accidentally commit or share your credentials, go to [developer.whoop.com](https://developer.whoop.com) immediately and regenerate your Client Secret. The old one should be considered compromised.
+
 Then push those credentials to the Notion Workers environment so the sync can use them when running in the cloud:
 
 ```shell
 ntn workers env push
 ```
+
+Once you've run `ntn workers env push`, the credentials are stored securely in Notion's cloud and your local `.env` file is only needed if you're running the worker locally for testing.
 
 ---
 
