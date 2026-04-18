@@ -82,12 +82,19 @@ npm install
 
 ## Step 4 — Add your WHOOP credentials
 
-Create a file called `.env` in the project folder with your credentials from Step 1:
+Run this to create your `.env` file from the included template:
 
+```shell
+cp .env.example .env
 ```
-WHOOP_CLIENT_ID=your_client_id_here
-WHOOP_CLIENT_SECRET=your_client_secret_here
+
+Then open it:
+
+```shell
+open .env
 ```
+
+Replace `your_client_id_here` and `your_client_secret_here` with the credentials you copied in Step 1, then save the file.
 
 > **Keep this file private.** Your `.env` file contains real API credentials — treat it like a password. A few rules to follow:
 >
