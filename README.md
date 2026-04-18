@@ -60,11 +60,13 @@ Your agent will work through the following steps automatically. Use these as che
 
 **1a — Create the project folder and files**
 
-The agent should create a folder called `whoop-to-notion` containing:
-- `src/index.ts` — the sync logic
-- `package.json` and `tsconfig.json` — project config
-- `.env.example` — credential template
-- `.gitignore` — keeps your credentials out of git
+The RECIPE.md contains all the project files embedded directly inside it — your agent reads them and writes them to disk locally. Nothing is cloned from GitHub. The files are based on the [Notion Workers template](https://github.com/makenotion/workers-template), customized for WHOOP.
+
+Your agent should create a folder called `whoop-to-notion` containing:
+- `src/index.ts` — the sync logic that pulls from WHOOP and writes to Notion
+- `package.json` and `tsconfig.json` — project configuration
+- `.env.example` — a template for your WHOOP credentials (you'll fill this in later)
+- `.gitignore` — ensures your credentials never accidentally get committed to git
 
 **1b — Install the Notion Workers SDK**
 
