@@ -1,5 +1,7 @@
 # Whoop to Notion
 
+## Start here
+
 Notion Workers is a new capability in Notion which allows you to sync external data sources into your Notion workspace. (See the project on GitHub [here](https://github.com/makenotion/workers-template).) This matters because once your data flows into Notion, you can run customizations on top with Custom Agents to display and analyze your data with great flexibility.
 
 Today, we'll use this to pull in health data from WHOOP. After doing this, you'll be able to ask Notion AI about your health, create customized dashboards with the metrics you care about most, and ultimately take action to improve your health. For me, this is the first step in what is a larger effort to pull in all my health data into Notion including Strava, bloodwork, and more.
