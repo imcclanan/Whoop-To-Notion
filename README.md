@@ -25,6 +25,8 @@ From there, you can build custom dashboards, run Custom Agents on top of your da
 
 ### Prerequisites
 
+**This guide is written for macOS.** The underlying sync will work on Windows and Linux, but some shell commands (like `cp` and `open`) are Mac-specific. If you're on another OS, you may need to adjust a few commands — your AI coding agent can help translate them.
+
 - A [WHOOP](https://www.whoop.com) account with data
 - A [Notion](https://notion.so) account
 - [Node.js](https://nodejs.org) version 22 or later — download the LTS version if you're not sure
