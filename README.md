@@ -188,7 +188,7 @@ This will open a browser window asking you to authorize the sync to access your 
 
 ### Step 7 — Load your full history (one-time backfill)
 
-The first time you run this, pull in all your historical data:
+Run these commands to load all your WHOOP history into Notion:
 
 ```shell
 ntn workers sync state reset recoveryBackfill && ntn workers sync trigger recoveryBackfill
