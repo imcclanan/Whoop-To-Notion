@@ -26,7 +26,7 @@ From there, you can build custom dashboards, run Custom Agents on top of your da
 ### Prerequisites
 
 - A [WHOOP](https://www.whoop.com) account with data
-- A [Notion](https://notion.so) account (free tier works)
+- A [Notion](https://notion.so) account
 - [Node.js](https://nodejs.org) version 22 or later — download the LTS version if you're not sure
 - An AI coding agent (Claude Code, Cursor, Copilot, etc.) — assumed to already be installed
 
