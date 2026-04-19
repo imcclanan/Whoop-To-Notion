@@ -150,7 +150,7 @@ Then open it:
 open .env
 ```
 
-Replace `your_client_id_here` and `your_client_secret_here` with the credentials you copied in Step 3, then save the file.
+Go to [developer.whoop.com](https://developer.whoop.com), open your app, and copy the **Client ID** and **Client Secret**. Replace `your_client_id_here` and `your_client_secret_here` with those values, then save the file.
 
 > **Keep this file private.** Your `.env` file contains real API credentials — treat it like a password. A few rules to follow:
 >
