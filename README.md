@@ -12,7 +12,7 @@ Today, we'll use this to pull in health data from WHOOP. After doing this, you'l
 
 ### The Outcome
 
-By the end of this guide, your WHOOP data will automatically sync into four Notion databases every 30 minutes:
+By the end of this setup, your WHOOP data will automatically sync into four Notion databases every 30 minutes:
 
 - **Whoop Daily Strain** 🔥 — daily cycle data (strain, heart rate, calories)
 - **Whoop Recovery** 💚 — recovery scores, HRV, resting HR, SpO2
