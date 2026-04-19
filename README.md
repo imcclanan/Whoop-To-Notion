@@ -224,8 +224,3 @@ From here on, the sync runs automatically every 30 minutes. New workouts, sleep 
 
 Your WHOOP data is now flowing into Notion automatically. From here, you can build custom dashboards or ask Notion AI questions about your health trends. The hard part is behind you — everything from here is just building on top of what you set up.
 
----
-
-### Privacy policy
-
-This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration handles your WHOOP health data. If you fork this repo and share it publicly, you should update the policy for your own version.
