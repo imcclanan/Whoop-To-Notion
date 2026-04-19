@@ -127,7 +127,7 @@ You need API credentials from WHOOP to let this sync read your data.
    ```
    https://www.notion.so/workers/oauth/callback
    ```
-5. For the privacy policy URL, link to your own repo or a page you control (e.g. `https://github.com/your-username/your-repo/blob/main/PRIVACY.md`). If you haven't pushed your project to GitHub yet, you may need to do that first (a private repo is fine). If you don't have a GitHub account, you'll need to create one at [github.com](https://github.com). It's free.
+5. For the privacy policy URL, link to your own repo or a page you control (e.g. `https://github.com/your-username/your-repo/blob/main/PRIVACY.md`). If you haven't pushed your project to GitHub yet, you may need to do that first (a private repo is fine). If you don't have a GitHub account, you'll need to create one at [github.com](https://github.com). It's free. Note: the privacy policy requirement is really meant for public apps that other users will connect to. Since this is a personal project, it's just a formality — linking to your own repo is fine.
 6. Under **Scopes**, check the boxes for the data types you want to sync. For this guide, we recommend enabling all of them
 7. For webhook URLs, this integration doesn't use webhooks — leave those fields blank
 8. Save the app — you do not need to request approval. That is only required for apps being distributed to other users
