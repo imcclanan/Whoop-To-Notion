@@ -174,7 +174,7 @@ You should see a success message listing the capabilities that were deployed.
 
 ---
 
-### Step 6 — Connect your WHOOP account
+### Step 6 — Authenticate with WHOOP
 
 Start the OAuth flow:
 
