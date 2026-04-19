@@ -19,7 +19,7 @@ By the end of this setup, your WHOOP data will automatically sync into four Noti
 - **Whoop Sleep** 😴 — sleep stages, performance, efficiency, respiratory rate
 - **Whoop Workouts** 🏋️ — individual workouts with sport, strain, and duration
 
-From there, you can build custom dashboards, run Notion AI agents against your data, and surface insights tailored to your health.
+From there, you can build custom dashboards, run Custom Agents on top of your data, and surface insights tailored to your health.
 
 ---
 
