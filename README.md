@@ -176,13 +176,7 @@ You should see a success message listing the capabilities that were deployed.
 
 ### Step 6 — Connect your WHOOP account
 
-This is the OAuth step — it links your WHOOP account to the sync.
-
-1. Go back to [developer.whoop.com](https://developer.whoop.com) and open your app
-2. Confirm the **Redirect URL** is set to `https://www.notion.so/workers/oauth/callback` (you set this in Step 3)
-3. Save the app if you made any changes
-
-Now start the OAuth flow:
+Start the OAuth flow:
 
 ```shell
 ntn workers oauth start whoopAuth
