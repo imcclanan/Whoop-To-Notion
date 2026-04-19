@@ -102,17 +102,17 @@ npm run check
 ```
 No errors means the code is valid and ready to deploy. If you see errors, share them with your agent to fix.
 
+---
+
+### Step 2 — Log into Notion
+
 **Before continuing:** All remaining commands need to be run from inside the `whoop-to-notion` folder. In your terminal, navigate there:
 
 ```shell
 cd whoop-to-notion
 ```
 
----
-
-### Step 2 — Log into Notion
-
-In your terminal, run:
+Then run:
 
 ```shell
 ntn login
