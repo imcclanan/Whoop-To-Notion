@@ -62,7 +62,7 @@ Your agent will work through the following steps automatically. Use these as che
 
 **1a — Create the project folder and files**
 
-The RECIPE.md contains all the project files embedded directly inside it — your agent reads them and writes them to disk locally. Nothing is cloned from GitHub. The files are based on the [Notion Workers template](https://github.com/makenotion/workers-template), customized for WHOOP.
+The RECIPE.md contains all the project files embedded directly inside it — your agent reads them and writes them to disk locally. The files are based on the [Notion Workers template](https://github.com/makenotion/workers-template), customized for WHOOP.
 
 Your agent should create a folder called `whoop-to-notion` containing:
 - `src/index.ts` — the sync logic that pulls from WHOOP and writes to Notion
