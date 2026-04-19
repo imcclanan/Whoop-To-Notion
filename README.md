@@ -158,7 +158,7 @@ Then push those credentials to the Notion Workers environment so the sync can us
 ntn workers env push
 ```
 
-Once you've run `ntn workers env push`, the credentials are stored securely in Notion's cloud and your local `.env` file is only needed if you're running the worker locally for testing.
+Once pushed, Notion handles the credentials — your local `.env` file stays on your machine and isn't used by the live sync.
 
 ---
 
