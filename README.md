@@ -106,6 +106,8 @@ No errors means the code is valid and ready to deploy. If you see errors, share 
 
 ### Step 2 — Log into Notion
 
+In your terminal, run:
+
 ```shell
 ntn login
 ```
