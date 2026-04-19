@@ -222,11 +222,3 @@ Your WHOOP data is now flowing into Notion automatically. From here, you can bui
 ### Privacy policy
 
 This repo includes a [PRIVACY.md](PRIVACY.md) that covers how this integration handles your WHOOP health data. If you fork this repo and share it publicly, you should update the policy for your own version.
-
-**What to change in `PRIVACY.md`:**
-
-1. **Contact** — update the contact section to point to your own GitHub repo or preferred contact method
-2. **Effective date** — update to today's date
-
-Everything else can stay as-is — the policy is written to describe the tool generically, not any specific person's deployment.
-
