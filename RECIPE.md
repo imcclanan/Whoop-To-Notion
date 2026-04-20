@@ -464,8 +464,8 @@ Once all steps above are complete, tell the user:
 >
 > 1. **Log into Notion** (Step 2 in the README): Run `ntn login` in your terminal
 > 2. **Create your WHOOP developer app** (Step 3 in the README): Go to developer.whoop.com and create an app
-> 3. **Add your WHOOP credentials** (Step 4 in the README): Copy your Client ID and Secret into the `.env` file, then run `ntn workers env push`
-> 4. **Deploy the worker** (Step 5 in the README): Run `ntn workers deploy`
+> 3. **Deploy the worker** (Step 4 in the README): Run `ntn workers deploy`
+> 4. **Add your WHOOP credentials** (Step 5 in the README): Copy your Client ID and Secret into the `.env` file, then run `ntn workers env push`
 > 5. **Connect your WHOOP account** (Step 6 in the README): Run `ntn workers oauth start whoopAuth`
 > 6. **Load your history** (Step 7 in the README): Run the backfill commands
 >
