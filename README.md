@@ -141,7 +141,19 @@ You need API credentials from WHOOP to let this sync read your data.
 
 ---
 
-### Step 4 — Add your WHOOP credentials (securely)
+### Step 4 — Deploy the worker
+
+This uploads your sync to Notion's servers so it can run automatically:
+
+```shell
+ntn workers deploy
+```
+
+You should see a success message listing the capabilities that were deployed.
+
+---
+
+### Step 5 — Add your WHOOP credentials (securely)
 
 Unlike the rest of this setup, this step involves real credentials that must stay private — treat them like a password. Don't share your screen or paste these values anywhere while completing this step.
 
@@ -166,18 +178,6 @@ ntn workers env push
 ```
 
 Once pushed, Notion handles the credentials — your local `.env` file stays on your machine and isn't used by the live sync.
-
----
-
-### Step 5 — Deploy the worker
-
-This uploads your sync to Notion's servers so it can run automatically:
-
-```shell
-ntn workers deploy
-```
-
-You should see a success message listing the capabilities that were deployed.
 
 ---
 
